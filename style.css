@@ -1,0 +1,235 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+body{
+  background-color: var(--background);
+}
+:root{
+  --yellow: #e9a800;
+  --blue: #244065;
+  --background: #f7f7f7;
+}
+img{
+  max-width: 100%;
+  display: inline-block;
+}
+.logo{
+  width: 20em;
+}
+.title{
+  background-color:var(--blue);
+  margin: 0 auto;
+  padding: 0.4em 0 0.3em 0;
+}
+.container{
+  max-width: 1140px;
+  padding: 0 1em;
+  margin: auto;
+}
+.head{
+  margin: 1em auto;
+  width: 70%;
+  font-size: 1.563rem;
+  font-weight: 700;
+}
+.head span{
+  color: red;
+}
+.banner{
+  width: 50%;
+}
+.about{
+  width: 75%;
+  color: #6a6a6a;
+  font-size: 1.12rem;
+  font-weight: 500;
+  margin: 1em auto;
+}
+.surveys{
+  width: 75%;
+  margin: auto;
+  padding-bottom: 3em;
+  border-bottom: 1px solid black;
+  margin-bottom: 3em;
+}
+.details{
+  padding: 0 1em;
+  font-size: 0.8rem;
+}
+.details a{
+  text-decoration: none;
+}
+.survey-title{
+  font-size: 1.12rem;
+  margin-bottom: 1.5em;
+}
+.survey h2 {
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+.buttons button {
+  width: 100%;
+  height: 2.5em;
+  display: block;
+  background: var(--yellow);
+  border: none;
+  margin: 0.8em 0;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+button:hover,
+button:active{
+  color: black;
+}
+.last-step{
+  color: #ff0000;
+}
+.complete{
+  margin: auto;
+  padding: 1.6em;
+  font-size: 1.5rem;
+  border-top: 5px solid var(--blue);
+  font-weight: 700;
+  background: white;
+  box-shadow: #71808f33 0px 10px 25px;
+}
+.last-step, .last-step-h1{
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0 1.5em;
+  margin: 1em auto;
+}
+.link{
+  color: blue;
+}
+.link-a{
+  color: #acacac;
+}
+.link-a a{
+  color: #6a6a6a;
+  font-size: 1rem;
+}
+p{
+  font-size: .7rem;
+  font-weight: 400;
+  color: #6a6a6a
+}
+.last-step-p{
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+  padding: 1em;
+}
+footer p{
+  text-align: justify;
+  margin-bottom: 2em;
+}
+.number{
+  font-size: 1.57rem;
+  font-weight: 800;
+  color: white;
+  background-color: #2caa06;
+  border: none;
+  padding: 0.6em 0;
+  width: 100%;
+}
+.number{
+  font-family: "Poppins", "sans-serif";
+  font-size: 1.57rem;
+  font-weight: 800;
+  color: white;
+  background-color: #2caa06;
+  border: none;
+  padding: 0.6em 0;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  animation: blink 1500ms infinite;
+}
+
+.number:focus{
+  color: black;
+}
+.active {
+  animation: hold 1s linear;
+}
+.complete.active {
+  animation: hold 0.5s linear;
+}
+.survey,
+.complete {
+  display: none;
+}
+.survey.active,
+.complete.active {
+  display: block;
+}
+@keyframes blink {
+  0% {
+    background-color: #2ba805;
+    box-shadow: 0 0 5px #2ba805;
+  }
+  50% {
+    background-color: #49e819;
+    box-shadow: 0 0 20px #49e819;
+  }
+  100% {
+    background-color: #2ba805;
+    box-shadow: 0 0 5px #2ba805;
+  }
+}
+@keyframes hold {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 990px) {
+  html {
+    font-size: 72%;
+  }
+}
+@media (max-width: 660px) {
+  html{
+    font-size: 1rem;
+  }
+  *{
+    width: 100%;
+  }
+  .banner {
+    width: 100%;
+  }
+  .container{
+    padding: 1em;
+  }
+  .head {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .surveys {
+    width: 100%;
+  }
+  .survey h2 {
+    font-size: 1.15rem;
+  }
+  button {
+    font-size: 1.15rem !important;
+  }
+  .complete {
+    padding: 1em 0.5em;
+    margin: auto;
+    font-size: 1.1rem;
+  }
+  .contact h2 {
+    font-size: 1.15rem;
+  }
+}
